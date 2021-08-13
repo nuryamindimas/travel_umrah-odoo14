@@ -127,6 +127,11 @@ class paket_perjalanan(models.Model):
         ws.write(3, 10, 'MAHRAM', style_bold_orange)
         ws.write(3, 11, 'USIA', style_bold_orange)
         ws.write(3, 12, 'NIK ', style_bold_orange)
+        ws.write(3, 13, 'Order ', style_bold_orange)
+        ws.write(3, 14, 'Room Type ', style_bold_orange)
+        ws.write(3, 15, 'Room Leader', style_bold_orange)
+        ws.write(3, 16, 'Room No ', style_bold_orange)
+        ws.write(3, 17, 'Alamat ', style_bold_orange)
 
         row_count = 4
         count = 1
@@ -145,6 +150,12 @@ class paket_perjalanan(models.Model):
             ws.write(row_count, 10,peserta.partner_id.name, style_no_bold)
             ws.write(row_count, 11,peserta.partner_id.age_days, style_umur)
             ws.write(row_count, 12,peserta.partner_id.no_identitas, style_no_bold)
+            ws.write(row_count, 13,peserta.order_id.name, style_no_bold)
+            ws.write(row_count, 14,peserta.order_id.passport_line.tipe_kamar, style_no_bold)
+            ws.write(row_count, 15,"-", style_no_bold)
+            ws.write(row_count, 16,"-", style_no_bold)
+            ws.write(row_count, 17,peserta.partner_id.street, style_no_bold)
+            
             count+=1
             row_count+=1
         
