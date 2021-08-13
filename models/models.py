@@ -100,19 +100,7 @@ class paket_perjalanan(models.Model):
         ws.set_column(1, 3, 25)
         ws.set_column(1, 4, 25)
 
-        ws.set_column(3, 0, 3)
-        ws.set_column(3, 1, 7)
-        ws.set_column(3, 2, 8)
-        ws.set_column(3, 3, 30)
-        ws.set_column(3, 4, 15)
-        ws.set_column(3, 5, 15)
-        ws.set_column(3, 6, 13)
-        ws.set_column(3, 7, 16)
-        ws.set_column(3, 8, 17)
-        ws.set_column(3, 9, 12)
-        ws.set_column(3, 10, 6)
-        ws.set_column(3, 11, 10)
-        ws.set_column(3, 12, 12)
+        
         
         ws.write(3, 0,'NO ', style_bold_orange)
         ws.write(3, 1,'TITLE ', style_bold_orange)
